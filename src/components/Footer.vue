@@ -7,39 +7,41 @@
                     <ul>
                         <li v-for="(dcComicsFooterLink,index) in dcComicsFooterLinks" :key="index">{{dcComicsFooterLink}}</li> 
                     </ul>
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li v-for="(shopFooterLink,index) in shopFooterLinks" :key="index">{{shopFooterLink}}</li> 
+                    </ul>
                 </div>
                 <div class="col">
                       <h4>DC</h4>
-                       <ul>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                    </ul>
+                        <ul>
+                            <li v-for="(dcFooterLink,index) in dcFooterLinks" :key="index">{{dcFooterLink}}</li> 
+                        </ul>
                 </div>
                 <div class="col">
                       <h4>SITES</h4>
                        <ul>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                        <li>aaaaaaaaaaaaaaa</li>
-                    </ul>
+                          <li v-for="(sitesFooterLink,index) in sitesFooterLinks" :key="index">{{sitesFooterLink}}</li> 
+                      </ul>
                 </div>
             </div>
             <div class="logo">
                 <img src="../assets/images/dc-logo-bg.png" alt="Logo DC Footer">
             </div>
         </div>
-        <div class="bottom-footer"></div>
+        <div class="bottom-footer">
+            <div class="sign-up">
+                <button>SIGN-UP NOW!</button>
+            </div>
+            <div class="follow-us">
+                <h3>FOLLOW US</h3>
+                <img src="../assets/images/footer-facebook.png" alt="facebook">
+                <img src="../assets/images/footer-twitter.png" alt="twitter">
+                <img src="../assets/images/footer-youtube.png" alt="youtube">
+                <img src="../assets/images/footer-pinterest.png" alt="pinterest">
+                <img src="../assets/images/footer-periscope.png" alt="periscope">
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -53,16 +55,24 @@
             sitesFooterLinks:['DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa'],
             shopFooterLinks:['Shop DC','Shop DC Collectibles']
         }
+    }
  }
 </script>
 
 <style lang="scss" scoped>
 
 $segoe-bold: 'Segoe UI Bold', 'Open Sans', Helvetica, sans-serif;
+$color-bottom-footer:#303030;
+$blue:#1176E8;;
 
+footer
+{
+     font-family: $segoe-bold; 
+}
  h4
  {
-             color: white;
+    color: white;
+    padding: 10px 0;
  }
 .top-footer
 {
@@ -74,7 +84,7 @@ $segoe-bold: 'Segoe UI Bold', 'Open Sans', Helvetica, sans-serif;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    font-family: $segoe-bold; 
+    max-height: 350px;
 
     .links
     {
@@ -100,7 +110,39 @@ $segoe-bold: 'Segoe UI Bold', 'Open Sans', Helvetica, sans-serif;
     }
     .logo
     {
-        transform: scale(1.2);
+        transform: scale(0.7);
+    }
+}
+
+.bottom-footer
+{
+    height: 100px;
+    background-color: $color-bottom-footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .sign-up{
+
+        button{
+            color: white;
+            background-color: $color-bottom-footer;
+            font-size: 1.3rem; 
+            border: 2px solid $blue;
+            padding: 10px 15px;
+        }
+    }
+
+    .follow-us
+    {
+        color: $blue;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+       
+       img,h3{
+           margin: 0 10px;
+       }
     }
 }
 

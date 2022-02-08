@@ -16,7 +16,7 @@ $color_content:#1C1C1C;
 
 main
 {
-    height: 200px;
+    height: 150px;
     background-color: $color_content;
     display: flex;
     align-items: center;

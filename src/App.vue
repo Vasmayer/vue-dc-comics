@@ -33,8 +33,9 @@ export default {
 
   body
   {
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: black;
+    height: 100vh;
   }
 }
 
