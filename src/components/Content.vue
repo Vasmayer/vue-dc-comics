@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 
-$color_content:#1C1C1C;
+@import "./../assets/scss/vars.scss";
 
 main
 {

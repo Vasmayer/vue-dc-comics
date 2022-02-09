@@ -34,9 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-$segoe-bold: 'Segoe UI Bold', 'Open Sans', Helvetica, sans-serif;
-$active: #0082F9;
+@import "./../assets/scss/vars.scss";
 
 header
 {
@@ -45,7 +43,6 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: $segoe-bold; 
 }
 ul {
 

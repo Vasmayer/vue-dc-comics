@@ -60,10 +60,7 @@
 </script>
 
 <style lang="scss" scoped>
-
-$segoe-bold: 'Segoe UI Bold', 'Open Sans', Helvetica, sans-serif;
-$color-bottom-footer:#303030;
-$blue:#1176E8;;
+@import "./../assets/scss/vars.scss";
 
 footer
 {
