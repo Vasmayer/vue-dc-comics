@@ -27,7 +27,7 @@ export default {
         {uri:'#',name:'Fans',isActive:false},
         {uri:'#',name:'News',isActive:false},
         {uri:'#',name:'Shop',isActive:false}
-    ]
+    ],
    }
  }
 }
