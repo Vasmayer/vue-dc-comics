@@ -1,12 +1,17 @@
 <template>
-    <main>
-        <div class="jumbotron">
-            
+    <main class="">
+        <div class="jumbotron position-relative">
+            <div class="position-absolute top-100 translate-middle current-series">
+               <h4>CURRENT SERIES</h4>
+            </div>
         </div>
         <div class="content container py-5">
             <div class="row">
               <Card v-for="(film,index) in films" :key="index" :thumb="film.thumb" :series="film.series" />
             </div>
+        </div>
+        <div class="load-more">
+            <button>Load More</button>
         </div>
     </main>
 </template>
@@ -108,6 +113,20 @@ export default {
 main
 {
      background-color: $color_content;
+
+     .current-series
+     {
+         background-color: $blue;
+         color: white;
+         align-items: center;
+         padding: 0 20px;
+         left: 25%;
+    
+         h4{
+             font-size: 20px;
+             
+         }
+     }
     .jumbotron
     {
         background-image: url(../assets/images/jumbotron.jpg);
@@ -118,6 +137,21 @@ main
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .load-more{
+        text-align: center;
+        padding-bottom: 20px;
+
+        button{
+            text-transform: uppercase;
+            background-color: $blue;
+            color: white;
+            padding: 0 10px;
+            border: solid 1px $blue;
+            text-align: center;
+        }
+
     }
 }
 </style>
