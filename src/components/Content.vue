@@ -1,29 +1,41 @@
 <template>
     <main>
-        <h1>Content goes here</h1>
+        <div class="jumbotron">
+            
+        </div>
+        <div class="content">
+            <Cardw />
+        </div>
     </main>
 </template>
 
 <script>
+ import Card from './Card.vue'; 
+
 export default {
-    name:'Content'
+    name:'Content',
+    components: {
+        Card,
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 
-@import "./../assets/scss/vars.scss";
+@import "./../assets/scss/index.scss";
 
 main
 {
-    height: 150px;
-    background-color: $color_content;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    h1{
-        color:white;
+    .jumbotron
+    {
+        background-image: url(../assets/images/jumbotron.jpg);
+ 
+        height: 350px;
+    }
+    .content
+    {
+        background-color: $color_content;
     }
 }
 </style>

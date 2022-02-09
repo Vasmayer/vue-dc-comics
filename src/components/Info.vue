@@ -1,9 +1,10 @@
 <template>
     <div class="info">
-        <div v-for="(image,index) in  imageUris" :key="index" class="image">
-            <img :src="require(`../assets/images/${image.file}`)" :alt="image.text">
-            <h6>{{image.text}}</h6>
-        </div>
+
+            <div v-for="(image,index) in  imageUris" :key="index" class="image">
+                <img :src="require(`../assets/images/${image.file}`)" :alt="image.text">
+                <h6>{{image.text}}</h6>
+            </div>
         
         
     </div>
@@ -28,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import "./../assets/scss/vars.scss";
+@import "./../assets/scss/index.scss";
 
 .info
 {

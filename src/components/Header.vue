@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/vars.scss";
+@import "./../assets/scss/index.scss";
 
 header
 {

@@ -2,7 +2,7 @@
     <footer>
         <div class="top-footer">
             <div class="links">
-                <div class="col">
+                <div class="cols">
                     <h4>DC COMICS</h4>
                     <ul>
                         <li v-for="(dcComicsFooterLink,index) in dcComicsFooterLinks" :key="index">{{dcComicsFooterLink}}</li> 
@@ -12,13 +12,13 @@
                         <li v-for="(shopFooterLink,index) in shopFooterLinks" :key="index">{{shopFooterLink}}</li> 
                     </ul>
                 </div>
-                <div class="col">
+                <div class="cols">
                       <h4>DC</h4>
                         <ul>
                             <li v-for="(dcFooterLink,index) in dcFooterLinks" :key="index">{{dcFooterLink}}</li> 
                         </ul>
                 </div>
-                <div class="col">
+                <div class="cols">
                       <h4>SITES</h4>
                        <ul>
                           <li v-for="(sitesFooterLink,index) in sitesFooterLinks" :key="index">{{sitesFooterLink}}</li> 
@@ -60,7 +60,7 @@
 </script>
 
 <style lang="scss" scoped>
-@import "./../assets/scss/vars.scss";
+@import "./../assets/scss/index.scss";
 
 footer
 {
@@ -70,6 +70,8 @@ footer
  {
     color: white;
     padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
  }
 .top-footer
 {
@@ -89,7 +91,7 @@ footer
         justify-content:center;
         width: 100%;
 
-        .col
+        .cols
         {
              color: darkgray;
              padding: 20px;
@@ -99,7 +101,7 @@ footer
 
                  li{
                     padding: 5px 0;   
-                    font-size: 0.8rem;        
+                    font-size: 10px;        
                  }
              }
         }
